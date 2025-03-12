@@ -95,22 +95,24 @@
 </head>
 
 <body>
-  <button id="botonFlotante" class="boton-flotante">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<button id="botonFlotante" class="boton-flotante">
     📞
 </button>
-  <!-- Botones ocultos -->
-  <div class="boton-acciones">
-      <button class="btn-llamar" onclick="window.location.href='tel:+1234567890'">📞</button>
-      <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/1234567890'">💬</button>
-  </div>
-  
-  <script>
-      $(document).ready(function() {
-          $("#botonFlotante").click(function() {
-              $(".boton-acciones").fadeToggle();
-          });
-      });
-  </script>
+<!-- Botones ocultos -->
+<div class="boton-acciones" style="display: none;">
+    <button class="btn-llamar" onclick="window.location.href='tel:+527716990034'">📞</button>
+    <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/527716990034'">💬</button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#botonFlotante").click(function() {
+            $(".boton-acciones").fadeToggle();
+        });
+    });
+</script>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="wifi" viewBox="0 0 24 24">
       <path fill="currentColor"
@@ -260,22 +262,25 @@
         <div class="d-flex flex-wrap justify-content-between align-items-center">
           <ul class="info d-flex flex-wrap list-unstyled m-0">
             
-            <li class="phone d-flex align-items-center me-4" style="font-size: 14px;">
-              <svg class="color me-1" width="15" height="15">
-                <use xlink:href="tel:+527712637392"></use>
-              </svg>771-263-7392
-            </li>
-            <li class="phone d-flex align-items-center me-4" style="font-size: 14px;">
-              <svg class="color me-1" width="15" height="15">
-                <use xlink:href="tel:+527716990034"></use>
-              </svg>771-699-0034
-            </li>
-            <li class="time d-flex align-items-center me-4" style="font-size: 14px;">
-              <svg class="color me-1" width="15" height="15">
-                <use xlink:href="mailto:Danielvagss@gmail.com"></use>
-              </svg>Danielvagss@gmail.com
-            </li>
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+              <li class="phone d-flex align-items-center me-4" style="font-size: 14px;">
+                  <a href="tel:+527712637392" class="text-decoration-none text-dark">
+                      <i class="bi bi-telephone me-1"></i> 771-263-7392
+                  </a>
+              </li>
+              <li class="phone d-flex align-items-center me-4" style="font-size: 14px;">
+                  <a href="tel:+527716990034" class="text-decoration-none text-dark">
+                      <i class="bi bi-telephone me-1"></i> 771-699-0034
+                  </a>
+              </li>
+              <li class="time d-flex align-items-center me-4" style="font-size: 14px;">
+                  <a href="mailto:Danielvagss@gmail.com" class="text-decoration-none text-dark">
+                      <i class="bi bi-envelope me-1"></i> Danielvagss@gmail.com
+                  </a>
+              </li>
           </ul>
+          
+          
           <ul class="social-links d-flex flex-wrap list-unstyled m-0 ">
             <li class="social">
               <a href="#">
@@ -330,16 +335,16 @@
                   <a class="nav-link active p-0" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Nosotros</a>
+                  <a class="nav-link p-0" href="#about-us">Nosotros</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Servicios</a>
+                  <a class="nav-link p-0" href="#room">Servicios</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Blog</a>
+                  <a class="nav-link p-0" href="#gallery">Galeria</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Contact</a>
+                  <a class="nav-link p-0" href="#contact">Contact</a>
                 </li>
                 
               </ul>
@@ -503,47 +508,7 @@
       </div>
     </div>
   </section>
-  <section class="container text-center mt-4">
-    <h2>Contacto</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-5 mb-4">
-            <h4>Redes Sociales</h4>
-            <div class="d-flex justify-content-center gap-2">
-                <a href="https://www.facebook.com/share/19dvsTRXW1/?mibextid=wwXIfr" target="_blank" class="btn btn-primary">
-                    <i class="bi bi-facebook"></i> Facebook
-                </a>
-                <a href="https://www.instagram.com/cabana_samadhi?igsh=djJ6YnhvcmpvM3N4&utm_source=qr" target="_blank" class="btn btn-danger">
-                    <i class="bi bi-instagram"></i> Instagram
-                </a>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <h4>Teléfonos</h4>
-            <div class="row g-2">
-                <div class="col-6">
-                    <a href="tel:+527712637392" class="btn btn-success w-100">
-                        <i class="bi bi-telephone"></i> Llamar: 771-263-7392
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a href="https://wa.me/527712637392" target="_blank" class="btn btn-success w-100">
-                        <i class="bi bi-whatsapp"></i> WhatsApp: 771-263-7392
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a href="tel:+527716990034" class="btn btn-success w-100">
-                        <i class="bi bi-telephone"></i> Llamar: 771-699-0034
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a href="https://wa.me/527716990034" target="_blank" class="btn btn-success w-100">
-                        <i class="bi bi-whatsapp"></i> WhatsApp: 771-699-0034
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  
 
 <!-- Agregar Bootstrap Icons si no están incluidos -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -692,7 +657,48 @@
       </div>
     </div>
   </section>
-
+  <section id="contact" class="container text-center mt-4">
+    <h2>Contacto</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <h4>Redes Sociales</h4>
+            <div class="d-flex justify-content-center gap-2">
+                <a href="https://www.facebook.com/share/19dvsTRXW1/?mibextid=wwXIfr" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/cabana_samadhi?igsh=djJ6YnhvcmpvM3N4&utm_source=qr" target="_blank" class="btn btn-danger">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <h4>Teléfonos</h4>
+            <div class="row g-2">
+                <div class="col-6">
+                    <a href="tel:+527712637392" class="btn btn-success w-100">
+                        <i class="bi bi-telephone"></i> Llamar: 771-263-7392
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="https://wa.me/527712637392" target="_blank" class="btn btn-success w-100">
+                        <i class="bi bi-whatsapp"></i> WhatsApp: 771-263-7392
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="tel:+527716990034" class="btn btn-success w-100">
+                        <i class="bi bi-telephone"></i> Llamar: 771-699-0034
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="https://wa.me/527716990034" target="_blank" class="btn btn-success w-100">
+                        <i class="bi bi-whatsapp"></i> WhatsApp: 771-699-0034
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br>
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">&copy; 2025 Todos los derechos reservados.</p>
 </footer>
