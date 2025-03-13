@@ -5,6 +5,7 @@
 
   <link rel="icon" type="image/icon" href="hojas.ico">
   <title>Cabañas - SAMADHI</title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,8 +103,8 @@
 </button>
 <!-- Botones ocultos -->
 <div class="boton-acciones" style="display: none;">
-    <button class="btn-llamar" onclick="window.location.href='tel:+527716990034'">📞</button>
-    <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/527716990034'">💬</button>
+    <button class="btn-llamar" onclick="window.location.href='tel:+527712637392'">📞</button>
+    <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/527712637392'">💬</button>
 </div>
 
 <script>
@@ -283,24 +284,22 @@
           
           <ul class="social-links d-flex flex-wrap list-unstyled m-0 ">
             <li class="social">
-              <a href="#">
-                <svg class="social" width="25" height="25">
-                  <use xlink:href="https://www.facebook.com/share/19dvsTRXW1/?mibextid=wwXIfr"></use>
-                </svg>
+              <a href="https://www.facebook.com/">
+                <i class="bi bi-facebook" style="font-size: 25px;"></i>
               </a>
             </li>
             <li class="social ms-4">
-              <a href="#">
-                <svg class="social" width="25" height="25">
-                  <use xlink:href="https://www.instagram.com/cabana_samadhi?igsh=djJ6YnhvcmpvM3N4&utm_source=qr"></use>
-                </svg>
+              <a href="https://www.instagram.com/">
+                <i class="bi bi-instagram" style="font-size: 25px;"></i>
               </a>
             </li>
+            
             
           </ul>
         </div>
       </div>
     </nav>
+    
     <nav id="primary-header" class="navbar navbar-expand-lg py-4">
       <div class="container-fluid padding-side">
         <div class="d-flex justify-content-between align-items-center w-100">
@@ -313,49 +312,46 @@
               <use xlink:href="#navbar-icon"></use>
             </svg>
           </button>
-          <div class="header-bottom offcanvas offcanvas-end " id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
               <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
                 aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
             <div class="offcanvas-body align-items-center justify-content-center">
-              <div class="search d-block d-lg-none m-5">
-                <form class=" position-relative">
-                  <input type="text" class="form-control bg-secondary border-0 rounded-5 px-4 py-2"
-                    placeholder="Search...">
-                  <a href="#" class="position-absolute top-50 end-0 translate-middle-y p-1 me-3">
-                    <svg class="" width="20" height="20">
-                      <use xlink:href="#search"></use>
-                    </svg>
-                  </a>
-                </form>
-              </div>
               <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
                 <li class="nav-item px-3">
-                  <a class="nav-link active p-0" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link p-0 btn btn-link" href="index.html" data-bs-dismiss="offcanvas" aria-label="Close">Inicio</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="#about-us">Nosotros</a>
+                  <a class="nav-link p-0 btn btn-link" href="index.html#about-us" data-bs-dismiss="offcanvas" aria-label="Close">Nosotros</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="#room">Servicios</a>
+                  <a class="nav-link p-0 btn btn-link" href="#room" data-bs-dismiss="offcanvas" aria-label="Close">Servicios</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="#gallery">Galeria</a>
+                  <a class="nav-link p-0 btn btn-link" href="#gallery" data-bs-dismiss="offcanvas" aria-label="Close">Galería</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="#contact">Contact</a>
+                  <a class="nav-link p-0 btn btn-link" href="#contact" data-bs-dismiss="offcanvas" aria-label="Close">Contacto</a>
                 </li>
-                
               </ul>
             </div>
           </div>
-          
         </div>
       </div>
     </nav>
+  
+    <!-- Resto del contenido de la página -->
+  
+   
+  
+    <!-- Agregar el archivo de Bootstrap JS si no lo tienes ya -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
   </header>
 <!-- Botón flotante -->
+<div id="select-arrival-date"></div>
 
   <section id="slider" data-aos="fade-up">
     <div class="container-fluid padding-side">
@@ -415,16 +411,16 @@
           <div class="swiper-slide">
             <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
               <img src="images/E1.JPG" alt="img" class="post-image img-fluid rounded-4">
-              <div class="product-description position-absolute p-5 text-start">
+              <div class="product-description position-absolute p-5 ">
                 <h4 class="display-6 fw-normal text-white">Eventos Espirituales y Religiosos</h4>
                 <table>
                   <tbody>
                     <tr class="text-white">
-                      <td class="pe-2">Retiros espirituales o religiosos</td>
+                      <td class="pe-2">-Retiros espirituales o religiosos</td>
                      
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Eventos religiosos y espirituales</td>
+                      <td class="pe-2">-Eventos religiosos y espirituales</td>
                      
                     </tr>
                    
@@ -438,25 +434,25 @@
           <div class="swiper-slide">
             <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
               <img src="images/E2.JPG" alt="img" class="post-image img-fluid rounded-4">
-              <div class="product-description position-absolute p-5 text-start">
+              <div class="product-description position-absolute p-5 ">
                 <h4 class="display-6 fw-normal text-white">Eventos Sociales y Celebraciones</h4>
                <table>
                   <tbody>
                     <tr class="text-white">
-                      <td class="pe-2">Bodas</td>
-                      <td class="price">Fiestas de cumpleaños</td>
+                      <td class="pe-2">-Bodas</td>
+                      <td class="price">-Fiestas de cumpleaños</td>
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Baby shower</td>
-                      <td>Pedidas de mano</td>
+                      <td class="pe-2">-Baby shower</td>
+                      <td>-Pedidas de mano</td>
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Fiesta despedida de soltero</td>
-                      <td>Eventos de fin de año</td>
+                      <td class="pe-2">-Fiesta despedida de soltero</td>
+                      <td>-Eventos de fin de año</td>
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Fiesta de lanzamiento o inauguraciones</td>
-                      <td>Eventos privados y celebraciones</td>
+                      <td class="pe-2">-Fiesta de lanzamiento o inauguraciones</td>
+                      <td>-Eventos privados y celebraciones</td>
                     </tr>
                    
                   </tbody>
@@ -470,28 +466,28 @@
           <div class="swiper-slide">
             <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
               <img src="images/E3.JPG" alt="img" class="post-image img-fluid rounded-4">
-              <div class="product-description position-absolute p-5 text-start">
+              <div class="product-description position-absolute p-5 text-body">
                 <h4 class="display-6 fw-normal text-white">Eventos Corporativos y Recreativos</h4>
                <table>
                   <tbody>
                     <tr class="text-white">
-                      <td class="pe-2">Reuniones de negocio y conferencias</td>
+                      <td class="pe-2 option-icon">-Reuniones de negocio y conferencias</td>
                       
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Talleres creativos</td>
+                      <td class="pe-2 option-icon">-Talleres creativos</td>
                      
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Cursos y talleres</td>
+                      <td class="pe-2 option-icon">-Cursos y talleres</td>
                      
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Picnics y cenas al aire libre</td>
+                      <td class="pe-2 option-icon">-Picnics y cenas al aire libre</td>
                    
                     </tr>
                     <tr class="text-white">
-                      <td class="pe-2">Reuniones familiares y cenas</td>
+                      <td class="pe-2 option-icon" >-Reuniones familiares y cenas</td>
                      
                     </tr>
                   </tbody>
@@ -657,6 +653,8 @@
       </div>
     </div>
   </section>
+
+
   <section id="contact" class="container text-center mt-4">
     <h2>Contacto</h2>
     <div class="row justify-content-center">
@@ -703,6 +701,33 @@
     <p class="mb-0">&copy; 2025 Todos los derechos reservados.</p>
 </footer>
 
+<script>
+  // Función para hacer scroll hacia la sección
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // Espera a que el documento esté completamente cargado
+  document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los enlaces del menú
+    const menuLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    // Añadir un listener a cada enlace
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        // Cierra el menú offcanvas al hacer clic en un enlace
+        const offcanvas = new bootstrap.Offcanvas(document.getElementById('bdNavbar'));
+        offcanvas.hide();
+      });
+    });
+  });
+</script>
+
+<!-- Agregar el archivo de Bootstrap JS si no lo tienes ya -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
